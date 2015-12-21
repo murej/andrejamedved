@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'NationalBook';
+  src: url('../fonts/National-Book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/National-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/National-Book.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/National-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/National-Book.svg#62964daa208bbf45b5fd237d4707a30a') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'NationalMedium';
+  src: url('../fonts/National-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/National-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/National-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/National-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/National-Medium.svg#2660ee565d1c1486a13f4accf05b8552') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'NationalRegular';
+  src: url('../fonts/National-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/National-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/National-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/National-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/National-Regular.svg#defce5347fd21723f4d4b40234ae0572') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+.container .row {
+	padding-top: 100px;
+}
+
+a {
+    color: #eaeaea !important;
+    text-decoration: none;
+}
+a:hover {
+	color: #ddd !important;
+}
+
+body {
+    background: url('../img/bg.jpg') repeat 50% 50% #555;
+    color: #ddd;
+}
+
+.navbar {
+	font-family: 'NationalRegular', Helvetica;
+	font-size: 18px;
+	color: #eaeaea;
+    background: url('../img/pasica.png') 50% 50%;
+    background-color: transparent;
+    border-bottom: none;
+    /*
+    box-shadow: 3px 4px 5px 0px rgba(200, 200, 200, 0.50);
+	/*
+	background: -moz-linear-gradient(top,  rgba(77,77,77,0.45) 0%, rgba(81,81,81,0.4) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(77,77,77,0.45)), color-stop(100%,rgba(81,81,81,0.4)));
+	background: -webkit-linear-gradient(top,  rgba(77,77,77,0.45) 0%,rgba(81,81,81,0.4) 100%);
+	background: -o-linear-gradient(top,  rgba(77,77,77,0.45) 0%,rgba(81,81,81,0.4) 100%);
+	background: -ms-linear-gradient(top,  rgba(77,77,77,0.45) 0%,rgba(81,81,81,0.4) 100%);
+	background: linear-gradient(to bottom,  rgba(77,77,77,0.45) 0%,rgba(81,81,81,0.4) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a64d4d4d', endColorstr='#80515151',GradientType=0 );
+	*/
+}
+.navbar .header-logo {
+  margin-top: 16px;
+  display: block;
+  float: left;
+}
+.navbar .header-logo img {
+  width: 220px;
+  display: block;
+}
+
+.contact-page {
+    margin: 0 auto;
+}
+
+.home-page h1 {
+	text-align: center;
+	max-width: 585px;
+	margin: 0 auto;
+	padding: 50px;
+}
+.home-page img {
+	width: 100%;
+}
+.tekst {
+	/*margin: 0 auto;*/
+	padding-top: 48px;
+}
+.tekst .left-column,
+.tekst .right-column {
+  width: 50%;
+  float: left;
+  margin-bottom: 135px;
+}
+.tekst .left-column {
+  padding-right: 16px;
+}
+.tekst .right-column {
+  padding-left: 16px;
+}
+.link {
+  float: right;
+  margin-top: 12px;
+}
+
+.opis p, .opis ul li {
+	font-family: 'NationalBook', Georgia;
+	font-size: 20px;
+	color: #eaeaea;
+	line-height: 1.21em;
+}
+.opis ul li:before{
+	content:"-";
+	position:relative;
+	left:-5px;
+}
+.opis ul li{
+	text-indent:-5px;
+}
+.opis ul {
+	list-style: none;
+	padding-left: 10px;
+}
+.contact-page .group {
+	margin-bottom: 19px;
+}
+.c-map {
+	float:left;
+	width: 50%;
+	position: relative;
+}
+.c-info {
+	float: right;
+	padding-left: 85px;
+	padding-top: 150px;
+	width: 50%;
+}
+#map {
+	position: absolute;
+	right: 0;
+	top: 160px;
+	width: 335px;
+	height: 280px;
+}
+.contact-page h2 {
+	font-family: 'NationalMedium', Georgia;
+	color: #eaeaea;
+	font-size: 17px;
+	margin: 0;
+}
+.contact-page p {
+	font-family: 'NationalBook';
+	color: #eaeaea;
+	font-size: 19px;
+	margin:0;
+}
+.contact-page .contact {
+	margin-top: 50px;
+}
+@media (max-width: 760px) {
+	.about-page {
+		width: 100%;
+	}
+	.navbar {
+		background-color: #333 !important;
+		background-image: none !important;
+		background: none #333;
+	}
+	.navbar {
+		background-color: #333 !important;
+		background-image: none !important;
+		background: none #333;
+	}
+	.navbar ul li {
+		text-align: center;
+	}
+	#map {
+		left: 0;
+		top: 0;
+		width: 300px;
+		height: 300px;
+	}
+	.c-info {
+		float: right;
+		width: 80%;
+		padding: 0;
+	}
+	.c-map {
+		float: none;
+		width: 300px;
+		position: absolute;
+		top: 440px;
+		margin-left: 50px;
+	}
+  .tekst .left-column,
+  .tekst .right-column {
+    width: 100%;
+    float: none;
+  }
+  .tekst .left-column {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .tekst .right-column {
+    padding-left: 0;
+  }
+
+}
+@media (min-width: 480px and max-width: 768px){
+
+    #logo{
+    	width: 10% !important;
+    	 height: 334px;
+
+    }
+}
+@media (min-width: 768px){
+    .navbar-nav{
+        float:right;
+    }
+    .container {
+      padding: 0 120px;
+    }
+}
